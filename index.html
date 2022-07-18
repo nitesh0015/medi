@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Medicine information</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+  </head>
+  <body> 
+    <div id="feedback-main"  id="modal" @keydown.esc="closeModalLogin" tabindex="0">
+      <div id="feedback-div">
+        <form action="/" method="post" class="form" id="feedback-form1" name="form1" enctype="multipart/form-data">
+          <p class="name">
+            <input name="name" type="name" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required placeholder="Name" id="feedback-name" />
+          </p>
+          <p class="email">
+            <input name="email" type="email" class="validate[required,custom[email]] feedback-input" id="feedback-email" placeholder="Email" required />
+          </p>
+          <p class="text">
+            <textarea name="comment" type="comment" class="validate[required,length[6,300]] feedback-input" id="feedback-comment" required placeholder="Hey, I really love the site but I believe that you could incorporate some ..... and also get rid of the ...... on the section."></textarea>
+          </p>
+    
+          <div class="feedback-submit">
+            <input type="submit" value="SEND" id="feedback-button-blue" />
+            <div class="feedback-ease"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <button id="popup" class="feedback-button" onclick="toggle_visibility()">Feedback</button>
+    <script src="feedback.js"></script>  
+     <h1>Medicine Information </h1>
+     
+    <section class="back">
+      
+       <ol class="detail" id="x">
+        <li class="medicine0"  id="speak"><strong>Name</strong>  Paracetamol</li>
+        <li class="medicine1 " id="demo"><STrong>Color</STrong>   White</li>
+        <li class="medicine1 " id="demo"><STrong>Manufacturer</STrong> S R Pharmaceuticals</li>
+        <li class="medicine3"><Strong>Manufacturing Date</Strong>  21 May 2021</li>
+         <li class="medicine2"><Strong>Expiry Date </Strong>  13 March 2022</li>
+        <li class="medicine1 " id="demo"><Strong>MRP</Strong> ₹ 50</li>
+         <li class="medicine4"><Strong>Days remaining</Strong><p id=days></p>
+        </li>
+          <button class="des"><Strong>Disclaimer</Strong> Never take a medicine without a prescription
+          </button>
+        
+      </ol> 
+      <hr>
+      <div class="google">
+      <section class="trans ">
+        <div id="google_translate_element"> </div>
+
+       
+     <hr>
+    </div>
+    <select class="voice" id="voiceList"></select>
+    <label for="voiceList" class="voice2" id="v1">Change Voice</label>
+    <button class="btn btn-grad fas fa-volume-up"id="btnSpeak">Pronounce</button>
+    </section>
+    
+  </body>
+   <script src="script.js"></script>
+ <script id="trans"class="trans1"
+    type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit"
+  ></script>
+  <label for="trans">Change Language</label>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</section>
+  
+</html>
